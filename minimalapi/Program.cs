@@ -61,9 +61,6 @@ public class Cliente
 
 public class AppDbContext : DbContext
 {
-    public AppDbContext(DbContextOptions options) : base(options)
-    {
-
-    }
+    public AppDbContext(DbContextOptions options) : base(options){}
     public DbSet<Cliente> Clientes { get; set; }
 }
